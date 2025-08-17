@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyWithMSK - Contact</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 30px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .logo svg {
+      background: #6366f1;
+      border-radius: 50%;
+      padding: 5px;
+      color: white;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .btn {
+      background: #f3f3f3;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover { background: #e0e0e0; }
+
+    .btn svg {
+      margin-left: 5px;
+      width: 16px;
+      height: 16px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    section h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #111;
+    }
+
+    section p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: border 0.3s, background 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #6366f1;
+      background: #fff;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: auto;
+    }
+
+    .submit-btn:hover { background: #4f46e5; }
+
+    .email-info {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+
+    .email-info a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      StudyWithMSK
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/english.html">English</a>
+      <a href="pages/maths.html">Maths</a>
+      <a href="pages/computer.html">Computer</a>
+    </nav>
+    <button onclick="window.location.href='contact.html'" class="btn">
+      Contact Us
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section>
+  <h1>Contact Us</h1>
+  <p>Mail me if you need notes, codes, or have any doubt.</p>
+
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="from_email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+
+    <div class="email-info">
+      <a href="mailto:studywithmskb@gmail.com">studywithmskb@gmail.com</a>
+    </div>
+  </form>
+</section>
+
+<!-- ✅ EmailJS Setup -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("y5CNuKwFd31MDPLHw"); // 🔑 replace with your EmailJS Public Key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_4qell48", "template_hycz18j", this)
+      .then(function() {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("❌ Failed to send: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+</body>
+</html>

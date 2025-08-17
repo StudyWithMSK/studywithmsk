@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>StudyWithMSK - English</title>
+</head>
+<body>
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" bis_skin_checked="1">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">StudyWithMSK</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a href="../index.html" class="mr-5 hover:text-gray-900">Home</a>
+      <a href="english.html" class="mr-5 hover:text-gray-900">English</a>
+      <a href="maths.html" class="mr-5 hover:text-gray-900">Maths</a>
+      <a href="computer.html" class="mr-5 hover:text-gray-900">Computer</a>
+     <!--<a href="notes.html" class="mr-5 hover:text-gray-900">Content Notes All</a>-->
+    </nav>
+    <button onclick="window.location.href='../contact.html'" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact Us
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<section class="text-gray-600 body-font">
+    <hr>
+    <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
+    <div class="flex flex-col text-center w-full mb-20" bis_skin_checked="1">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">StudyWith MSK</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever you need for study you will get it here, I Manpreet your teacher here. I will be going to teach you Maths, English and computer here, On YouTube. Like that if you don't had anything yet know you will be able to teach your friends too.</p>
+    </div>
+        <hr>
+<div class="container px-5 py-24 mx-auto flex flex-wrap" bis_skin_checked="1">
+    <div class="rounded-lg h-64 overflow-hidden" bis_skin_checked="1">
+        <img alt="content"  id="randomImage" class="object-cover object-center h-full w-full" >
+        <script>
+    // 🔑 Replace with your Unsplash Access Key
+    const accessKey = "xTywOggZveeeBDvRpNnPQtOXJx-sLObKicpvNJB2VlY";
+    const topic = "kids are studying"; // change topic here
+
+    function loadImage() {
+      fetch(`https://api.unsplash.com/photos/random?query=${topic}&client_id=${accessKey}`)
+        .then(res => res.json())
+        .then(data => {
+          // Force 720x600 size with Unsplash parameters
+          const imageUrl = `${data.urls.raw}&w=720&h=600&fit=crop`;
+          document.getElementById("randomImage").src = imageUrl;
+        })
+        .catch(err => console.error(err));
+    }
+
+    // Load first image
+    loadImage();
+  </script>
+      </div>
+    <div class="md:w-3/5 md:pl-6" bis_skin_checked="1">
+        <p class="leading-relaxed text-base">Welcome to the English Learning Section! 📚 On my YouTube channel, <a target="_blank" href="https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=1" style="color:blue;" >StudyWith MSK</a></p>
+        <p class="leading-relaxed text-base">I have created dedicated playlists to help students. learn English in a simple and engaging way.</p>
+        <pre class="leading-relaxed text-base">For <b>Class 7</b>, you can explore the complete Honeycomb book lessons. I am creating videos when I uploaded next playlist it will be linked here.
+            <b>The Honeycomb book</b> <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_gH0DjFx4hNbMq-WJOQYY3R" target="_blank" style="color:blue;" >Click here to watch the Class 7 Honeycomb Playlist.</a></pre>
+        <pre class="leading-relaxed text-base"  >For <b>Class 6</b>, I have two playlists —
+            <b>The Honeysuckle book</b> <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_g9jAHUFALqNbWgx-KvT7gc" style="color:blue;" >Click here to watch the Class 6 Honeysuckle Playlist</a>
+            <b>The A Pact with the Sun Book</b> <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_guvScLpUVRK-s2-DwuI84f" target="_blank" style="color:blue;">Click here to watch the Class 6 A Pact with Sun Playlist.</a></pre>
+        <pre class="leading-relaxed text-base"> Each playlist covers all chapters with easy explanations to support your studies in hindi..</pre>
+        <div class="flex md:mt-4 mt-6" bis_skin_checked="1">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded" onclick="openInNewTab('https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=2')">Subscribe</button>
+        <script>
+  function openInNewTab(url) {
+    window.open(url, '_blank');
+  }
+</script>
+
+        <a target="_blank" href="https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg" style="color:blue;" class="text-indigo-500 inline-flex items-center ml-4">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+            <div style="text-align:center; margin-top:20px;">
+  <div class="g-ytsubscribe"
+       data-channelid="UCwYG-y1hKPsmSZ4ybZe3JBg"
+       data-layout="full"
+       data-theme="dark"
+       data-count="default">
+  </div>
+</div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+<hr>
+
+
+<!-- Notes Section -->
+
+
+<hr>
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
+    <div class="-my-8 divide-y-2 divide-gray-100" bis_skin_checked="1">
+      <div class="py-8 flex flex-wrap md:flex-nowrap" bis_skin_checked="1">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col" bis_skin_checked="1">
+          <span class="font-semibold title-font text-gray-700">Book Notes</span>
+          <span class="mt-1 text-gray-500 text-sm">16 - Aug - 2025</span>
+        </div>
+        <div class="md:flex-grow" bis_skin_checked="1">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Books Notes For Class 7 All Chapters </h2>
+          <p class="leading-relaxed">Here you will get all Clapter notes as .zip (HoneyComb) Book <a href="files/HoneyCombBook.zip" download class="inline-flex items-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">📥 Download Zip File</a></p>
+          <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="py-8 flex flex-wrap md:flex-nowrap" bis_skin_checked="1">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col" bis_skin_checked="1">
+          <span class="font-semibold title-font text-gray-700">CBook Notes</span>
+          <span class="mt-1 text-gray-500 text-sm">16 - Aug - 2025</span>
+        </div>
+        <div class="md:flex-grow" bis_skin_checked="1">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Books Notes For Class 7 All Chapters</h2>
+          <p class="leading-relaxed">Here you will get all Clapter notes as .zip (An Alian Hand) Book.<a href="files/AN%20ALIAN%20HAND%20CLASS%207.zip" download="AN ALIAN HAND CLASS 7" class="inline-flex items-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">📥 Download PDF</a> </p>
+          <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

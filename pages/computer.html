@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyWithMSK - Computer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ffffff;   /* changed to pure white */
+      padding: 15px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 15px;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #000;
+    }
+    header button {
+      background: #f0f0f0;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    header button:hover {
+      background: #ddd;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+    }
+    .section-item {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .section-item:last-child {
+      border-bottom: none;
+    }
+    .section-date {
+      width: 200px;
+      flex-shrink: 0;
+      margin-bottom: 10px;
+    }
+    .section-date span {
+      display: block;
+      color: #666;
+      font-size: 14px;
+    }
+    .section-content {
+      flex: 1;
+    }
+    .section-content h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+    .section-content p {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .section-content a {
+      color: #4f46e5;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    .section-content a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #eee;
+    }
+    svg {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div style="display:flex; align-items:center;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+         style="width:40px;height:40px;background:#4f46e5;color:white;padding:5px;border-radius:50%;" viewBox="0 0 24 24">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+    </svg>
+    <span style="margin-left:10px;font-size:20px;font-weight:bold;">StudyWithMSK</span>
+  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="english.html">English</a>
+    <a href="maths.html">Maths</a>
+    <a href="computer.html">Computer</a>
+  </nav>
+  <button onclick="window.location.href='../contact.html'">
+    Contact Us →
+  </button>
+</header>
+
+<div class="container">
+  <h1>StudyWith MSK</h1>
+  <p>Whatever you need for study you will get it here. I, Manpreet, your teacher, will teach you Maths, English, and Computer here on YouTube. This way, even if you don’t know something yet, you’ll soon be able to teach your friends too.</p>
+
+  <div class="section-item">
+    <div class="section-date">
+      <strong>YT Video</strong>
+      <span>26 Jul 2025</span>
+    </div>
+    <div class="section-content">
+      <h2>Fix This! Biggest Problem When Adding a New Hard Drive or SSD in Windows</h2>
+      <p>Are you facing issues after adding a new hard disk or SSD to your PC? Is your drive not showing up, not opening, or asking to be formatted? This video explains the BIGGEST problem and how to fix it step by step using Disk Management in Windows.</p>
+      <a href="https://youtu.be/w7LiLzXVAAI" target="_blank">Watch Video →</a>
+    </div>
+  </div>
+
+  <div class="section-item">
+    <div class="section-date">
+      <strong>Playlist</strong>
+      <span>15 Aug 2025</span>
+    </div>
+    <div class="section-content">
+      <h2>Normal Computing (Error Fix & Tips)</h2>
+      <p>Here I’ll upload videos related to computer error fixing and tricks. Please subscribe to my channel and check this playlist.</p>
+      <a href="https://www.youtube.com/playlist?list=PLKqbY-udh9zUXJMYZZ9-qK-8e0Rch78TU" target="_blank">View Playlist →</a>
+    </div>
+  </div>
+
+  <div class="section-item">
+    <div class="section-date">
+      <strong>Playlist</strong>
+      <span>11 Aug 2025</span>
+    </div>
+    <div class="section-content">
+      <h2>Creating AI Assistant like Jarvis</h2>
+      <p>In this playlist I am creating an AI assistant like Jarvis from Iron Man. Follow along to build your own, and you’ll also get the source code.</p>
+      <a href="https://www.youtube.com/playlist?list=PLKqbY-udh9zUHLG2zO3VwMI64EozjR8Xj" target="_blank">View Playlist on YT →</a>
+      <a href="subfiles/JarvisAI.html" target="_blank">View Playlist on Website →</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
